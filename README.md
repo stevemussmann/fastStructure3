@@ -1,11 +1,10 @@
-# fastStructure
+# fastStructure3
 
 ## Introduction
 
-*fastStructure* is a fast algorithm for inferring population structure from large SNP genotype data. 
-It is based on a variational Bayesian framework for posterior inference and is written in Python2.x. 
-Here, we summarize how to setup this software package, compile the C and Cython scripts and run 
-the algorithm on a test simulated genotype dataset.
+*fastStructure* is a fast algorithm for inferring population structure from large SNP genotype data. It is based on a variational Bayesian framework for posterior inference and was originally written in Python2.x. I have updated the code for compatibility with Python3. This repository has been tested with Python version 3.6.9, Cython v0.26.1, numpy v1.16.6, scipy v0.19.1, and GSL v2.5 on a computer running Ubuntu 18.04.6 x64. I cannot guarantee that other versions of the dependencies will be readily compatible. Additionally, I have not tested this version of fastStructure with a .bed file, so the code in parse_bed.pyx is untested. The remainder of this README is mostly unaltered from the original version posted by Anil Raj at https://github.com/rajanil/fastStructure.
+<hr style="border:2px solid gray">
+Here, we summarize how to setup this software package, compile the C and Cython scripts and run the algorithm on a test simulated genotype dataset.
 
 ## Citation
 
